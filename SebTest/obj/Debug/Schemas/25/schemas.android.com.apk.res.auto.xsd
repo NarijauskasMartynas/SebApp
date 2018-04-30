@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>4/24/2018 1:18:58 AM</xs:documentation>
+    <xs:documentation>5/1/2018 12:26:56 AM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -431,7 +431,9 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/amount" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/error" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@android:string/cancel" />
@@ -1988,7 +1990,9 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/amount" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/error" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@android:string/cancel" />
@@ -3228,7 +3232,9 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/amount" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/error" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@android:string/cancel" />
@@ -3957,7 +3963,9 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/amount" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/error" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@android:string/cancel" />
@@ -4213,7 +4221,9 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/amount" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/error" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@android:string/cancel" />
@@ -5270,7 +5280,9 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/amount" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/error" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@android:string/cancel" />
@@ -6434,7 +6446,9 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/amount" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/error" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@android:string/cancel" />
@@ -8272,7 +8286,9 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/amount" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/error" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@android:string/cancel" />

@@ -26,7 +26,6 @@ C:\Users\Martynas\source\repos\SebTest\SebTest\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Martynas\source\repos\SebTest\SebTest\obj\Debug\SebTest.csprojResolveAssemblyReference.cache
 C:\Users\Martynas\source\repos\SebTest\SebTest\bin\Debug\SebTest.dll.mdb
 C:\Users\Martynas\source\repos\SebTest\SebTest\obj\Debug\android\assets\SebTest.dll.mdb
-C:\Users\Martynas\source\repos\SebTest\SebTest\bin\Debug\SebTest.dll
 bin\Debug\Mono.Android.pdb
 bin\Debug\mscorlib.pdb
 bin\Debug\System.Core.pdb

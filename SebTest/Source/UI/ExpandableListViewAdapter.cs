@@ -45,7 +45,7 @@ namespace SebTest.Source
         {
             var result = new Transaction();
             firstChild.TryGetValue(names[groupPosition], out result);
-            return result.beneficiaryName + "*" + result.beneficiaryAccount + "*" + result.details + "*" + result.amount;
+            return result.BeneficiaryName + "*" + result.BeneficiaryAccount + "*" + result.Details + "*" + result.Amount;
         }
 
         public override long GetChildId(int groupPosition, int childPosition)
@@ -82,7 +82,7 @@ namespace SebTest.Source
         {
             var result = new Transaction();
             firstChild.TryGetValue(names[groupPosition], out result);
-            return names[groupPosition] + "*" + result.amount;
+            return names[groupPosition] + "*" + result.Amount;
         }
 
         public override long GetGroupId(int groupPosition)

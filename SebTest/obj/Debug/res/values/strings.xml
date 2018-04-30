@@ -1,1 +1,1 @@
-<resources><string name="app_name">SebTest</string></resources>
+<resources><string name="app_name">SebTest</string><string name="error">klaida</string><string name="amount">Jūsų suma: </string></resources>

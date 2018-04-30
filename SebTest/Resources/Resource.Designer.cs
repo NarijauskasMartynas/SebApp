@@ -2314,8 +2314,14 @@ namespace SebTest
 			// aapt resource value: 0x7f050012
 			public const int abc_toolbar_collapse_description = 2131034130;
 			
+			// aapt resource value: 0x7f050023
+			public const int amount = 2131034147;
+			
 			// aapt resource value: 0x7f050021
 			public const int app_name = 2131034145;
+			
+			// aapt resource value: 0x7f050022
+			public const int error = 2131034146;
 			
 			// aapt resource value: 0x7f050013
 			public const int search_menu_title = 2131034131;

@@ -16,19 +16,13 @@ namespace SebTest.Source
     public class Transaction
     {
         //beneficiary name
-        public string beneficiaryName { get; set; }
+        public string BeneficiaryName { get; set; }
         //beneficiaryAccount
-        public string beneficiaryAccount { get; set; }
+        public string BeneficiaryAccount { get; set; }
         //details
-        public string details { get; set; }
+        public string Details { get; set; }
         //amount
-        public double amount { get; set; }
-
-        public Transaction()
-        {
-
-        }
-
+        public double Amount { get; set; }
 
     }
 }

@@ -5,6 +5,7 @@ using SebTest.Source;
 using System.Collections.Generic;
 using System.Net;
 using Newtonsoft.Json;
+using SebTest.Source.Controllers;
 
 namespace SebTest
 {
@@ -14,68 +15,53 @@ namespace SebTest
         private TextView amountText;
         private List<Transaction> transactionsList = new List<Transaction>();
         private List<string> names = new List<string>();
-        ExpandableListViewAdapter adapter;
-        ExpandableListView expandableListView;
-        Dictionary<string, Transaction> mDictionary = new Dictionary<string, Transaction>();
+        private ExpandableListViewAdapter adapter;
+        private ExpandableListView expandableListView;
+        private Dictionary<string, Transaction> mDictionary = new Dictionary<string, Transaction>();
+        private Storage storage = new Storage();
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
+            transactionsList = storage.getTransactions();
             amountText = FindViewById<TextView>(Resource.Id.Amount);
-            
-            setData(out adapter);
-            amountText.Text = getAmount().ToString() + "$";
-
-            expandableListView = FindViewById<ExpandableListView>(Resource.Id.expandableList);
-            expandableListView.SetAdapter(adapter);
+            if(transactionsList == null)
+            {
+                amountText.Text = GetString(Resource.String.error);
+            }
+            else
+            {
+                amountText.Text = GetString(Resource.String.amount) + GetAmount().ToString() + "$";
+                SetData(out adapter, transactionsList);
+                expandableListView = FindViewById<ExpandableListView>(Resource.Id.expandableList);
+                expandableListView.SetAdapter(adapter);
+            }
+      
+           
         }
         
-        public double getAmount()
+        public double GetAmount()
         {
             double sum = 0;
             for(int i =0; i<transactionsList.Count; i++)
             {
-                sum = sum + transactionsList[i].amount;
+                sum = sum + transactionsList[i].Amount;
             }
             return sum;
         }
 
-        public void setData(out ExpandableListViewAdapter adapter)
+        public void SetData(out ExpandableListViewAdapter adapter, List<Transaction> transaction)
         {
 
-
-            List<Transaction> transaction = getData();
-
-            for(int i =0; i<transaction.Count; i++)
+            for(int i = 0; i< transaction.Count; i++)
             {
-                transactionsList.Add(new Transaction
-                {
-                    beneficiaryName = transaction[i].beneficiaryName,
-                    beneficiaryAccount = transaction[i].beneficiaryAccount,
-                    details = transaction[i].details,
-                    amount = transaction[i].amount
-                });
-            }
-            
-            for(int i = 0; i< transactionsList.Count; i++)
-            {
-                names.Add(transactionsList[i].beneficiaryName);
-                mDictionary.Add(transactionsList[i].beneficiaryName, transactionsList[i]);
+                names.Add(transaction[i].BeneficiaryName);
+                mDictionary.Add(transaction[i].BeneficiaryName, transaction[i]);
                 
             }
             adapter = new ExpandableListViewAdapter(this, names, mDictionary);
            
-        }
-        public List<Transaction> getData()
-        {
-            string url = @"https://sheetsu.com/apis/v1.0su/979ef3ba5632";
-            var json = new WebClient().DownloadString(url);
-            List<Transaction> transaction = JsonConvert.DeserializeObject<List<Transaction>>(json);
-            return transaction;
-
         }
     }
 }
